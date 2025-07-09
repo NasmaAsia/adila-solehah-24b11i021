@@ -2,7 +2,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('https://a.storyblok.com/f/178900/900x506/12e9dd1e59/slime-s3-pv-hero.jpeg/m/filters:quality(95)format(webp)') no-repeat center center fixed;
+  background: rgba(0, 0, 0, 0.85) url('https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABRUhiM7re9QA4Cy56hGQ1NUUrt54Wtu-RIiEPxvCx4jfQvKHmXqyxLflrz0GuzzoaKHsEUr4VgLN7DxnaSv5j-ygsVydCEhyv8Z8.jpg?r=6e8') no-repeat center center fixed;
+  background-blend-mode: overlay;
   background-size: cover;
   color: #fff;
   margin: 0;
@@ -45,7 +46,7 @@ nav ul li a:hover {
 
 main {
   padding: 50px 30px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 16px;
   margin: 30px auto;
   max-width: 1100px;
