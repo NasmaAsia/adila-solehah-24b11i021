@@ -6,36 +6,43 @@
   <title>Portfolio - Adila Solehah</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+    .achievements-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+
     .achievements-gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
+      gap: 30px;
       margin-top: 30px;
     }
 
-    .achievements-gallery img {
+    .achievement-item {
       width: 300px;
+    }
+
+    .achievement-item img {
+      width: 100%;
       height: 200px;
       object-fit: cover;
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
       cursor: pointer;
+      transition: transform 0.3s ease;
     }
 
-    .achievements-gallery img:hover {
+    .achievement-item img:hover {
       transform: scale(1.05);
     }
 
-    .achievements-gallery p {
-      text-align: center;
+    .achievement-item p {
       margin-top: 10px;
       color: #ffe66d;
       font-weight: bold;
     }
 
-    /* Lightbox Styles */
     .lightbox {
       display: none;
       position: fixed;
@@ -64,7 +71,6 @@
     input[type="checkbox"]:checked ~ .lightbox {
       display: flex;
     }
-
   </style>
 </head>
 <body>
@@ -83,43 +89,47 @@
   </header>
 
   <main>
-    <h2>My Achievements</h2>
-    <p>Here are some highlights of my educational and personal achievements:</p>
+    <h2 class="achievements-section">My Achievements</h2>
+    <p style="text-align:center;">Here are some highlights of my educational and personal achievements:</p>
 
     <div class="achievements-gallery">
-      <!-- MindWorks Malaysia -->
-      <label for="img1">
-        <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392336240367501385/IMG-20180811-WA0036.jpg?ex=686f29ac&is=686dd82c&hm=5d6accd7b5e13fe48ff5a51ca12994a81820083c8356d223e7214fc3dce767ec&" alt="MindWorks">
-        <p>MindWorks Malaysia Participant and Winner in 2018</p>
-      </label>
 
-      <!-- IKBN -->
-      <label for="img2">
-        <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392335343226982521/IMG-20220414-WA0016.jpg?ex=686f28d6&is=686dd756&hm=009d1e8e83df949e529cf42be49bf487fa7df5c31b093ace3c46a9bc7d475440&" alt="IKBN">
-        <p>IKBN Certificatein Multimedia Course in 2021</p>
-      </label>
+      <div class="achievement-item">
+        <label for="img1">
+          <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392336240367501385/IMG-20180811-WA0036.jpg?ex=686f29ac&is=686dd82c&hm=5d6accd7b5e13fe48ff5a51ca12994a81820083c8356d223e7214fc3dce767ec&" alt="MindWorks">
+        </label>
+        <p>MindWorks Malaysia Participantand Winner in 2018</p>
+      </div>
 
-      <!-- UCTATI -->
-      <label for="img3">
-        <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392336082535841802/IMG-20240626-WA0054.jpg?ex=686f2986&is=686dd806&hm=54c7bc56e24a0a0e68e01ef26dfbcb50915361d1a735b0ee247785c50530bf15&" alt="UCTATI">
-        <p>UCTATI Certificate in Foundation in Information Technology (FIT) in 2024</p>
-      </label>
+      <div class="achievement-item">
+        <label for="img2">
+          <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392335343226982521/IMG-20220414-WA0016.jpg?ex=686f28d6&is=686dd756&hm=009d1e8e83df949e529cf42be49bf487fa7df5c31b093ace3c46a9bc7d475440&" alt="IKBN">
+        </label>
+        <p>IKBN Certificate in Multimedia</p>
+      </div>
+
+      <div class="achievement-item">
+        <label for="img3">
+          <img src="hhttps://cdn.discordapp.com/attachments/1030168258810216491/1392336082535841802/IMG-20240626-WA0054.jpg?ex=686f2986&is=686dd806&hm=54c7bc56e24a0a0e68e01ef26dfbcb50915361d1a735b0ee247785c50530bf15&" alt="UCTATI">
+        </label>
+        <p>UCTATI Certificate in Foundation in Information Technology</p>
+      </div>
+
     </div>
 
-    <!-- Hidden checkboxes for lightbox triggers -->
     <input type="checkbox" id="img1">
     <div class="lightbox" onclick="document.getElementById('img1').checked=false;">
-      <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392336240367501385/IMG-20180811-WA0036.jpg" alt="MindWorks Large">
+      <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392336240367501385/IMG-20180811-WA0036.jpg?ex=686f29ac&is=686dd82c&hm=5d6accd7b5e13fe48ff5a51ca12994a81820083c8356d223e7214fc3dce767ec&" alt="MindWorks Large">
     </div>
 
     <input type="checkbox" id="img2">
     <div class="lightbox" onclick="document.getElementById('img2').checked=false;">
-      <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392335343226982521/IMG-20220414-WA0016.jpg" alt="IKBN Large">
+      <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392335343226982521/IMG-20220414-WA0016.jpg?ex=686f28d6&is=686dd756&hm=009d1e8e83df949e529cf42be49bf487fa7df5c31b093ace3c46a9bc7d475440&" alt="IKBN Large">
     </div>
 
     <input type="checkbox" id="img3">
     <div class="lightbox" onclick="document.getElementById('img3').checked=false;">
-      <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392336082535841802/IMG-20240626-WA0054.jpg" alt="UCTATI Large">
+      <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392336082535841802/IMG-20240626-WA0054.jpg?ex=686f2986&is=686dd806&hm=54c7bc56e24a0a0e68e01ef26dfbcb50915361d1a735b0ee247785c50530bf15&" alt="UCTATI Large">
     </div>
 
   </main>
@@ -127,6 +137,10 @@
   <footer>
     <p>Solehah_24B11I021©Copyright.2025</p>
   </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
