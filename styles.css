@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #d7e9f7, #f0f8ff);
-  color: #2c3e50;
+  background: url('https://wallpaperaccess.com/full/6324785.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: linear-gradient(to right, #3a80ba, #6aa0f8);
-  color: white;
+  background: rgba(58, 128, 186, 0.85);
+  color: #fff;
   padding: 30px 20px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 nav ul {
@@ -38,15 +41,15 @@ nav ul li a:hover {
 
 main {
   padding: 40px 20px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 12px;
   margin: 20px auto;
   max-width: 1000px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 footer {
-  background-color: #34495e;
+  background-color: rgba(52, 73, 94, 0.85);
   color: #ecf0f1;
   text-align: center;
   padding: 15px;
@@ -60,21 +63,16 @@ img {
   height: auto;
   margin: 15px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 h1, h2, h3 {
-  color: #3a80ba;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  color: #ffe66d;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 
 ul li {
   margin: 8px 0;
-}
-
-/* Additional anime touch */
-main {
-  background: linear-gradient(to bottom right, #ffffff, #e0f0ff);
 }
 
 nav ul li a::after {
@@ -104,6 +102,3 @@ button, a.button {
 button:hover, a.button:hover {
   background-color: #517ec3;
 }
-
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
