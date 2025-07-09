@@ -55,13 +55,30 @@
       align-items: center;
       justify-content: center;
       padding: 20px;
+      flex-direction: column;
     }
 
     .lightbox img {
       max-width: 90%;
-      max-height: 90%;
+      max-height: 80%;
       border-radius: 12px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+    }
+
+    .close-btn {
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.3s ease;
+    }
+
+    .close-btn:hover {
+      transform: scale(1.3);
     }
 
     input[type="checkbox"] {
@@ -98,37 +115,43 @@
         <label for="img1">
           <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392336240367501385/IMG-20180811-WA0036.jpg?ex=686f29ac&is=686dd82c&hm=5d6accd7b5e13fe48ff5a51ca12994a81820083c8356d223e7214fc3dce767ec&" alt="MindWorks">
         </label>
-        <p>MindWorks Malaysia Participantand Winner in 2018</p>
+        <p>MindWorks Malaysia Participant</p>
       </div>
 
       <div class="achievement-item">
         <label for="img2">
           <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392335343226982521/IMG-20220414-WA0016.jpg?ex=686f28d6&is=686dd756&hm=009d1e8e83df949e529cf42be49bf487fa7df5c31b093ace3c46a9bc7d475440&" alt="IKBN">
         </label>
-        <p>IKBN Certificate in Multimedia</p>
+        <p>IKBN Certificate</p>
       </div>
 
       <div class="achievement-item">
         <label for="img3">
           <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392336082535841802/IMG-20240626-WA0054.jpg?ex=686f2986&is=686dd806&hm=54c7bc56e24a0a0e68e01ef26dfbcb50915361d1a735b0ee247785c50530bf15&" alt="UCTATI">
         </label>
-        <p>UCTATI Certificate in Foundation in Information Technology</p>
+        <p>UCTATI Certificate</p>
       </div>
 
     </div>
 
+    <!-- Lightbox 1 -->
     <input type="checkbox" id="img1">
-    <div class="lightbox" onclick="document.getElementById('img1').checked=false;">
+    <div class="lightbox">
+      <label for="img1" class="close-btn">&times;</label>
       <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392336240367501385/IMG-20180811-WA0036.jpg?ex=686f29ac&is=686dd82c&hm=5d6accd7b5e13fe48ff5a51ca12994a81820083c8356d223e7214fc3dce767ec&" alt="MindWorks Large">
     </div>
 
+    <!-- Lightbox 2 -->
     <input type="checkbox" id="img2">
-    <div class="lightbox" onclick="document.getElementById('img2').checked=false;">
+    <div class="lightbox">
+      <label for="img2" class="close-btn">&times;</label>
       <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392335343226982521/IMG-20220414-WA0016.jpg?ex=686f28d6&is=686dd756&hm=009d1e8e83df949e529cf42be49bf487fa7df5c31b093ace3c46a9bc7d475440&" alt="IKBN Large">
     </div>
 
+    <!-- Lightbox 3 -->
     <input type="checkbox" id="img3">
-    <div class="lightbox" onclick="document.getElementById('img3').checked=false;">
+    <div class="lightbox">
+      <label for="img3" class="close-btn">&times;</label>
       <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392336082535841802/IMG-20240626-WA0054.jpg?ex=686f2986&is=686dd806&hm=54c7bc56e24a0a0e68e01ef26dfbcb50915361d1a735b0ee247785c50530bf15&" alt="UCTATI Large">
     </div>
 
@@ -137,10 +160,6 @@
   <footer>
     <p>Solehah_24B11I021©Copyright.2025</p>
   </footer>
-
-</body>
-</html>
-
 
 </body>
 </html>
