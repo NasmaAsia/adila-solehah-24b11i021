@@ -5,9 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page of Adila Solehah</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .image-gallery img {
+      width: 350px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-<header>
+  <header>
     <h1>Welcome to the Home Page of Adila Solehah</h1>
     <nav>
       <ul>
@@ -23,11 +44,21 @@
   <main>
     <h2>Hello, I'm Adila Solehah</h2>
     <p>An aspiring Graphic Designer and Freelance Artist. Welcome to my personal space!</p>
-    <img img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392312276077514773/IMG_20220502_102240.jpg?ex=686f135a&is=686dc1da&hm=52a26a10c6474f84fc34c5715ef35585b586de0e5eaa6bd443c89de4630e75e7&" width="3080" height="4608" alt="Creative Image 1" />
-    <img img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392312275506827336/IMG_20211219_155750.jpg?ex=686f135a&is=686dc1da&hm=2abedb3a2ba8273bb87bb41452a1732ba10bf3c27022c40d476ebed4be62b82e&" width="3080" height="4608" alt="Creative Image 2" /></main>
+
+    <div class="image-gallery">
+      <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392312276077514773/IMG_20220502_102240.jpg?ex=686f135a&is=686dc1da&hm=52a26a10c6474f84fc34c5715ef35585b586de0e5eaa6bd443c89de4630e75e7&" alt="Creative Image 1" />
+      
+      <img src="https://cdn.discordapp.com/attachments/1030168258810216491/1392312275506827336/IMG_20211219_155750.jpg?ex=686f135a&is=686dc1da&hm=2abedb3a2ba8273bb87bb41452a1732ba10bf3c27022c40d476ebed4be62b82e&" alt="Creative Image 2" />
+    </div>
+
+  </main>
 
   <footer>
     <p>Solehah_24B11I021©Copyright.2025</p>
+  </footer>
+</body>
+</html>
+
 </footer>
 </body>
 </html>
