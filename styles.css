@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('https://www.uhdpaper.com/assets/thumbs/33295-rimuru-tempest-that-time-i-got-reincarnated-as-a-slime-4k-uhdpaper.com-4.2678.jpg') no-repeat center center fixed;
+  background: url('https://p325k7wa.twic.pics/high/that-time-i-got-reincarnated-as-a-slime-isekai-chronicles/that-time-i-got-reincarnated-as-a-slime-isekai-chronicles/00-page-setup/TTIGRSIC-header-mobile.jpg?twic=v1/resize=760/step=10/quality=80') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   margin: 0;
@@ -63,11 +63,11 @@ footer {
 }
 
 img {
-  width: 240px;
-  height: auto;
-  margin: 15px;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
   transition: transform 0.3s ease;
 }
 
